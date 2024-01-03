@@ -1,0 +1,59 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "locacaoLivroJV",
+            "request": "launch",
+            "mainClass": "locacaoLivroJV",
+            "projectName": "Exercicios_BackEnd_1250095b"
+        },
+        {
+            "type": "java",
+            "name": "calcularAreaJ",
+            "request": "launch",
+            "mainClass": "calcularAreaJ",
+            "projectName": "Exercicios_BackEnd_1250095b"
+        },
+        {
+            "type": "java",
+            "name": "abastecimento",
+            "request": "launch",
+            "mainClass": "abastecimento",
+            "projectName": "Exercicios_BackEnd_1250095b"
+        },
+        {
+            "type": "java",
+            "name": "exercicioHorasViagem",
+            "request": "launch",
+            "mainClass": "exercicioHorasViagem",
+            "projectName": "Exercicios_BackEnd_1250095b"
+        },
+        {
+            "name": "C/C++: g++.exe Compilar e depurar o arquivo ativo",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Habilitar a reformatação automática para gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Definir Tipo de Desmontagem como Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++.exe arquivo de build ativo"
+        }
+    ]
+}
