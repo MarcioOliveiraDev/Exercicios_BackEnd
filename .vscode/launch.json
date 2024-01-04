@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "diaUtil",
+            "request": "launch",
+            "mainClass": "diaUtil",
+            "projectName": "Exercicios_BackEnd_1250095b"
+        },
+        {
+            "type": "java",
             "name": "locacaoLivroJV",
             "request": "launch",
             "mainClass": "locacaoLivroJV",
