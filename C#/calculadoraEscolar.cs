@@ -1,6 +1,8 @@
-internal class Program
+using System;
+
+class CalculadoraEscolar
 {
-    private static void Main(string[] args)
+    static void Main()
     {
         // initialize variables - graded assignments 
         decimal currentAssignments = 5;
@@ -35,8 +37,8 @@ internal class Program
 
         Console.WriteLine("Student \tGrade");
         Console.WriteLine($"Sophia \t\t{mediaSophia:F1} \t{(mediaSophia >= 90 ? "A" : "B")}");
-        Console.WriteLine($"Sophia \t\t{mediaNicolas:F1} \t{(mediaNicolas >= 90 ? "A" : "B")}");
-        Console.WriteLine($"Sophia \t\t{mediaZahirah:F1} \t{(mediaZahirah >= 90 ? "A" : "B")}");
-        Console.WriteLine($"Sophia \t\t{mediaJeong:F1} \t{(mediaJeong >= 90 ? "A" : "B")}");
+        Console.WriteLine($"Nicolas \t\t{mediaNicolas:F1} \t{(mediaNicolas >= 90 ? "A" : "B")}");
+        Console.WriteLine($"Zahira \t\t{mediaZahirah:F1} \t{(mediaZahirah >= 90 ? "A" : "B")}");
+        Console.WriteLine($"Jeong \t\t{mediaJeong:F1} \t{(mediaJeong >= 90 ? "A" : "B")}");
     }
 }
