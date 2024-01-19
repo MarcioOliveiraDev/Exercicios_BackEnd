@@ -656,8 +656,63 @@ for (int i = 0; i < stringsCount; i++)
     mySentence = myString.Trim();
     Console.WriteLine(mySentence);
 }
-*/
 
+
+string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+decimal somaNumerico = 0m;
+string concatenacao = "";
+decimal numero;
+
+foreach (var collection in values)
+{
+    
+    if (decimal.TryParse(collection, out numero))
+    {
+        somaNumerico += numero;
+    }
+    else
+    {
+        concatenacao += collection;
+    }
+    
+}
+Console.WriteLine($"Soma numérica: {somaNumerico}");
+Console.WriteLine($"Concatenação: {concatenacao}");
+
+string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+decimal total = 0m;
+string message = "";
+
+foreach (var value in values)
+{
+    decimal number; // stores the TryParse "out" value
+    if (decimal.TryParse(value, out number))
+    {
+        total += number;
+    } else
+    {
+        message += value;
+    }
+}
+
+Console.WriteLine($"Message: {message}");
+Console.WriteLine($"Total: {total}");
+
+decimal price = 123.45m;
+int discount = 50;
+Console.WriteLine($"Price: {price:C} (Save {discount:C})");*/
+
+string message = "(What if) I am (only interested) in the last (set of parentheses)?";
+int openingPosition = message.LastIndexOf('I');
+
+
+int closingPosition = message.LastIndexOf('m');
+
+closingPosition += 1;
+
+int length = closingPosition - openingPosition;
+Console.WriteLine(message.Substring(openingPosition, length));
 
 
 
