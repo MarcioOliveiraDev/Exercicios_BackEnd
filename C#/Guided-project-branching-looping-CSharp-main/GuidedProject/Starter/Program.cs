@@ -284,7 +284,7 @@ Console.WriteLine($"You selected {ourAnimals[animalSpecies]}.");*/
 Console.WriteLine("Press the Enter key to continue");
 
 // pause code execution
-readResult = Console.ReadLine();
+//readResult = Console.ReadLine();
 
 
 
