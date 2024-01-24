@@ -701,7 +701,7 @@ Console.WriteLine($"Total: {total}");
 
 decimal price = 123.45m;
 int discount = 50;
-Console.WriteLine($"Price: {price:C} (Save {discount:C})");*/
+Console.WriteLine($"Price: {price:C} (Save {discount:C})");
 
 string message = "(What if) I am (only interested) in the last (set of parentheses)?";
 int openingPosition = message.LastIndexOf('I');
@@ -712,7 +712,18 @@ int closingPosition = message.LastIndexOf('m');
 closingPosition += 1;
 
 int length = closingPosition - openingPosition;
-Console.WriteLine(message.Substring(openingPosition, length));
+Console.WriteLine(message.Substring(openingPosition, length));*/
+
+//Qual será a saída do seguinte trecho de código?
+
+int y = 5;
+void PrintValue()
+{
+    int y = 10;
+    Console.WriteLine(y);
+}
+PrintValue();
+
 
 
 
